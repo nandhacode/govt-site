@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>இல்லம் தேடிக் கல்வி</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/7d153dcf3c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/style.css" />
+  <script>
+    $( document ).ready(function() {
+
+    $('.collapsible').on('hide.bs.collapse', function (e) {
+        $(e.currentTarget).parent().find('a i')[0].className = 'fa fa-plus'
+    })
+
+
+    $('.collapsible').on('show.bs.collapse', function (e) {
+        $(e.currentTarget).parent().find('a i')[0].className = 'fa fa-minus'
+    })
+    });
+    </script>
+</head>
+<body>
+<div class="container-fluat header">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a href="index.html"><img src="images/TMlogo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluat register">
+     <div class="text-center">
+          <p style="color: #480ca8; font-size: 22px; margin-bottom: 15px;">தன்னார்வலர்களுக்கான பதிவேற்று படிவம் / Volunteer Registration</p>
+     </div>
+    <div class="panel-group">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1"><i class="fa fa-minus" style="color: white;" aria-hidden="true"></i> அடிப்படைத் தகவல்கள் / <b>Basic Information</b></a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in collapsible">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="name"><i class="fa fa-user" aria-hidden="true"></i> முழுப் பெயர் / <b>Full Name (In Capital letters)</b><span>*</span></label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="gender"><i class="fa fa-venus-mars" aria-hidden="true"></i> பாலினம் / <b>Gender</b><span>*</span></label>
+                            <select class="form-control" id="gender">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="ஆண் / Male">ஆண் / Male</option>
+                                <option value="பெண் / Female">பெண் / Female</option>
+                                <option value="திருநங்கை / Transgender">திருநங்கை / Transgender</option>
+                                <option value="திருநம்பி / Transgender">திருநம்பி / Transgender</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="birth"><i class="fa fa-calendar-o" aria-hidden="true"></i> பிறந்த தேதி / <b>DOB</b><span>*</span></label>
+                            <input type="date" class="form-control" id="birth">
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="mobile"><i class="fa fa-mobile" aria-hidden="true"></i> அலைபேசி எண் / <b>Mobile No.</b><span>*</span></label>
+                            <input type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" id="mobile">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="whatapp"><i class="fa fa-whatsapp" aria-hidden="true"></i> வாட்ஸ்ஆப் எண். / <b>WhatsApp No.</b></label>
+                            <input type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" id="whatapp">
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> மின்னஞ்சல் / <b>Email ID</b></label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="aadhaar"><i class="fa fa-address-card" aria-hidden="true"></i> ஆதார் எண். / <b>Aadhaar No.</b></label>
+                            <input type="text" maxlength="12" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" id="aadhaar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse2"><i class="fa fa-plus" aria-hidden="true" style="color: white;"></i> உங்கள் முகவரி / <b>Residential Address Details</b></a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse collapsible">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 mb_10">
+                        <label for="district"><i class="fa fa-user-plus" aria-hidden="true"></i> மாவட்டம் / District</b><span>*</span></label>
+                        <select class="form-control" id="district">
+                            <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                            <option value="தேனி/THENI">தேனி/THENI</option>
+                            <option value="தூத்துக்குடி/THOOTHUKKUDI">தூத்துக்குடி/THOOTHUKKUDI</option>
+                            <option value="திருச்சிராப்பள்ளி/TIRUCHIRAPPALLI">திருச்சிராப்பள்ளி/TIRUCHIRAPPALLI</option>
+                            <option value="திருப்பூர்/TIRUPPUR">திருப்பூர்/TIRUPPUR</option>
+                            <option value="தஞ்சாவூர்/THANJAVUR">தஞ்சாவூர்/THANJAVUR</option>
+                            <option value="சென்னை/CHENNAI">சென்னை/CHENNAI</option>
+                            <option value="கள்ளக்குறிச்சி/KALLAKURICHI">கள்ளக்குறிச்சி/KALLAKURICHI</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mb_10">
+                        <label for="local"><i class="fa fa-map" aria-hidden="true"></i> மாவட்டம் / District</b><span>*</span></label>
+                        <select class="form-control" id="local">
+                            <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                            <option value="அ. அத்திப்பாக்கம்/A. ATHIPAKKAM">அ. அத்திப்பாக்கம்/A. ATHIPAKKAM</option>
+                            <option value="அகரக்கோட்டாலம்/AGARAKOTTALAM">அகரக்கோட்டாலம்/AGARAKOTTALAM</option>
+                            <option value="அலம்பளம்.வி/ALAMABALAM .V">அலம்பளம்.வி/ALAMABALAM .V</option>
+                            <option value="அலங்கிரி/ALANGIRI">அலங்கிரி/ALANGIRI</option>
+                            <option value="ஆலத்தூர்/ALATHUR">ஆலத்தூர்/ALATHUR</option>
+                            <option value="ஆலூர்/ALUR">ஆலூர்/ALUR</option>
+                            <option value="அம்மையகரம்/AMMAIYAGARAM">அம்மையகரம்/AMMAIYAGARAM</option>
+                            <option value="அம்மகளத்தூர்/AMMAKALATHUR">அம்மகளத்தூர்/AMMAKALATHUR</option>
+                            <option value="அந்தியூர்/ANDHIYUR">அந்தியூர்/ANDHIYUR</option>
+                            <option value="ஆண்டிக்குழி/ANDIKUZHI">ஆண்டிக்குழி/ANDIKUZHI</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 mb_10">
+                        <label for="village"><i class="fa fa-map" aria-hidden="true"></i> கிராமம் அல்லது வார்டு/Village or Ward</b><span>*</span></label>
+                        <select class="form-control" id="village">
+                            <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                            <option value="அலங்கிரி/Alangiri">அலங்கிரி/Alangiri</option>
+                            <option value="அலங்கிரி காலனி/Alangiri colony">அலங்கிரி காலனி/Alangiri colony</option>
+                            <option value="சாலாப்பாக்கம்/Salapaakkam">சாலாப்பாக்கம்/Salapaakkam</option>
+                            <option value="சுந்தரவாண்டி/Suntharavandi">சுந்தரவாண்டி/Suntharavandi</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mb_10">
+                        <label for="address1"><i class="fa fa-home" aria-hidden="true"></i> உங்கள் முகவரி / Your Address</b><span>*</span></label>
+                        <textarea style="resize: vertical; width: 100%;" placeholder="250 எழுத்துகளுக்கு மிகாமல் பதிவிடவும் / Limited to 250 characters " class="form-control" rows="5" id="address1"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 mb_10">
+                        <label for="pincode"><i class="fa fa-clipboard" aria-hidden="true"></i> அஞ்சல் குறியீட்டு எண் / Pin Code<span>*</span></label>
+                        <input type="text" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" id="pincode">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 mb_10">
+                        <label for="pincode"><i class="fa fa-map-marker" aria-hidden="true"></i> நீங்கள் எங்கு தன்னார்வலராக செயல்பட விரும்புகிறீர்கள்? / Where do you wish to volunteer?<span>*</span></label>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" value="1">மேலே வழங்கிய முகவரிக்கு அருகில் / Near the residential address provided</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" value="2">வேறு ஒரு இடத்தில் / Pick a new location</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse3"><i class="fa fa-plus" aria-hidden="true" style="color: white;"></i> கல்வி மற்றும் தொழில் விவரங்கள் / Educational and Professional details</a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse collapsible">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="educational"><i class="fa fa-graduation-cap" aria-hidden="true"></i> கிராமம் அல்லது வார்டு/Village or Ward</b><span>*</span></label>
+                            <select class="form-control" id="educational">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="10ஆம் வகுப்பு / SSLC">10ஆம் வகுப்பு / SSLC</option>
+                                <option value="12ஆம் வகுப்பு / HSC">12ஆம் வகுப்பு / HSC</option>
+                                <option value="டிப்ளமோ / Diploma">டிப்ளமோ / Diploma</option>
+                                <option value="இளங்கலை பட்டதாரி / Graduate">இளங்கலை பட்டதாரி / Graduate</option>
+                                <option value="முதுகலை பட்டதாரி / Postgraduate">முதுகலை பட்டதாரி / Postgraduate</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <label for="professional"><i class="fa fa-user-secret" aria-hidden="true"></i>  தொழில் / Professional Status </b><span>*</span></label>
+                            <select class="form-control" id="professional">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="அரசுப் பணியாளர் / Working in Govt.">அரசுப் பணியாளர் / Working in Govt.</option>
+                                <option value="தனியார் பணியாளர் / Working in Private">தனியார் பணியாளர் / Working in Private</option>
+                                <option value="சுயதொழில் முனைவோர் / Self-Employed">சுயதொழில் முனைவோர் / Self-Employed</option>
+                                <option value="வேலை தேடுபவர் / Looking for job">வேலை தேடுபவர் / Looking for job</option>
+                                <option value="இல்லத்தரசி / Home Maker">இல்லத்தரசி / Home Maker</option>
+                                <option value="ஆசிரியர் சமூகம் / Teaching community">ஆசிரியர் சமூகம் / Teaching community</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="B_Ed"><i class="fa fa-graduation-cap" aria-hidden="true"></i> நீங்கள் இளங்கலை கல்வியியல் (B.Ed.) பட்டம் பெற்றவரா? / Are you a B.Ed qualified graduate?</b><span>*</span></label>
+                            <select class="form-control" id="B_Ed">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="ஆம் / Yes">ஆம் / Yes</option>
+                                <option value="இல்லை / No">இல்லை / No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="D_T_Ed"><i class="fa fa-wpbeginner" aria-hidden="true"></i> நீங்கள் தொடக்கக் கல்வி பட்டயப் படிப்புச் சான்று / ஆசிரியர் பயிற்சி பட்டயப்படிப்புச் சான்று (D.El.Ed / D.T. Ed) பெற்றவரா?Are you a D.El.Ed / D.T. Ed qualified individual?</b><span>*</span></label>
+                            <select class="form-control" id="D_T_Ed">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="ஆம் / Yes">ஆம் / Yes</option>
+                                <option value="இல்லை / No">இல்லை / No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="RCI"><i class="fa fa-address-card-o" aria-hidden="true"></i>  தாங்கள் Rehabilitation Council of India(RCI) ஆல் அங்கீகரிக்கப்பட்ட பட்டம் / பட்டயம் ஏதேனும் படித்தவரா? / Have you completed a Degree / Diploma recognized by Rehabilitation Council of India (RCI)?</b><span>*</span></label>
+                            <select class="form-control" id="RCI">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="ஆம் / Yes">ஆம் / Yes</option>
+                                <option value="இல்லை / No">இல்லை / No</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse4"><i class="fa fa-plus" aria-hidden="true" style="color: white;"></i> இதர கேள்விகள் / Additional questions</a>
+                </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse collapsible">
+                <div class="panel-body">
+                    <div class="inner_box">
+                        <h4>குறிப்பு / Note:</h4>
+                        <P>* முழு நேர தன்னார்வலர் - வாரத்திற்கு 6 மணி நேரம் <b>/ Full time - 6 hours of volunteering commitment per week</b><br/>
+                            * பகுதி நேரம் - வாரத்திற்கு ஒருமுறை/இருவாரங்களுக்கு ஒருமுறை/மாதத்திற்கு ஒருமுறை <b>/ Part time - Volunteer based on availability (Weekly once/Two weeks once/Monthly once)</b>
+                        </P>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="volunteering"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>  தன்னார்வ தொண்டு விருப்பநிலை /Volunteering availability<span>*</span></label>
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" value="1">முழு நேர தன்னார்வலர் / Full time</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb_10">
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" value="2">பகுதி நேர தன்னார்வலர் / Part time</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="part_time"><i class="fa fa-black-tie" aria-hidden="true"></i> பகுதி நேர தன்னார்வலர் / Part time - Volunteer based on availability<span>*</span></label>
+                            <select class="form-control" id="part_time">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="வாரத்திற்கு ஒருமுறை /  Weekly once">வாரத்திற்கு ஒருமுறை /  Weekly once</option>
+                                <option value="இருவாரங்களுக்கு ஒருமுறை / Two weeks once">இருவாரங்களுக்கு ஒருமுறை / Two weeks once</option>
+                                <option value="மாதத்திற்கு ஒருமுறை / Monthly once">மாதத்திற்கு ஒருமுறை / Monthly once</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="vaccination"><i class="fa fa-eyedropper" aria-hidden="true"></i> தடுப்பூசி பெற்ற விபரம் / Vaccination Status<span>*</span></label>
+                            <select class="form-control" id="vaccination">
+                                <option value="" disabled selected hidden>தேர்ந்தெடுக்கவும் / Select</option>
+                                <option value="முதல் தடுப்பூசி செலுத்திக்கொண்டவர் / First dose of vaccination">முதல் தடுப்பூசி செலுத்திக்கொண்டவர் / First dose of vaccination</option>
+                                <option value="இரண்டு தடுப்பூசி செலுத்திக்கொண்டவர் / Both the doses of vaccination">இரண்டு தடுப்பூசி செலுத்திக்கொண்டவர் / Both the doses of vaccination</option>
+                                <option value="தடுப்பூசி செலுத்தாதவர் / Not yet vaccinated">தடுப்பூசி செலுத்தாதவர் / Not yet vaccinated</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="volunteer"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>  நீங்கள் ஏன் தொண்டு செய்ய விரும்புகின்றீர்கள்? / Why do you want to volunteer?</b></label>
+                            <textarea style="resize: vertical; width: 100%;" placeholder="1000 எழுத்துகளுக்கு மிகாமல் பதிவிடவும் / Limited to 1000 characters" class="form-control" rows="4" id="volunteer"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="teaching"><i class="fa fa-book" aria-hidden="true"></i> முந்தைய கற்பித்தல் அனுபவம் / Previous teaching experience</b></label>
+                            <textarea style="resize: vertical; width: 100%;" placeholder="1000 எழுத்துகளுக்கு மிகாமல் பதிவிடவும் / Limited to 1000 characters" class="form-control" rows="4" id="teaching"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mb_10">
+                            <label for="volunteering"><i class="fa fa-handshake-o" aria-hidden="true"></i>  தன்னார்வ அனுபவம் / Volunteering experience</b></label>
+                            <textarea style="resize: vertical; width: 100%;" placeholder="1000 எழுத்துகளுக்கு மிகாமல் பதிவிடவும் / Limited to 1000 characters" class="form-control" rows="4" id="volunteering"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px;" class="checkbox">
+            <label><input type="checkbox" value="checked">மேலே கொடுக்கப்பட்ட தகவல்கள் அனைத்தும் உண்மை. / All the information provided above are true to my knowledge.</label>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluat footer">
+    <div class="row">
+        <div class="col-sm-6">
+            <p style="color: white; font-size: 20px; line-height: 22px;">illamthedikalvi@gmail.com<br>
+                <span style="font-size: 14px;">© 2021 Department of School Education Tamilnadu All Rights Reserved <a style="color: white; text-decoration: underline;" href="private.html"><b>Privacy Policy</b></a></span>
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <img style="max-width: 240px; float: right;" src="images/tmlogo.png" />
+        </div>
+    </div>
+</div>
+<script type="text/javacsript">
+    
+</script>
+</body>
+</html>

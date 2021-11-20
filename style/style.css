@@ -1,0 +1,183 @@
+.header{
+    background-color: #480ca8;
+    padding: 40px 20px 0px;
+    height: auto;
+}
+ .navbar{
+    border-radius: 0px;
+    background-color: white;
+    margin: 0px 50px;
+    min-height: 100px;
+ }
+.navbar-header , .navbar-nav {
+    padding-top: 20px;
+}
+.navbar-toggle{
+    border: 1px solid black;
+}
+.navbar-toggle .icon-bar{
+    background-color: black;
+}
+.navbar-header a img{
+    max-width: 240px;
+}
+.navbar-nav li a{
+    color:black;
+    font-size: 17px;
+}
+.navbar-nav{
+    margin-right: 15px;
+}
+.active, .active a{
+    background-color: #480ca8;
+    color: white!important;
+}
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
+    background-color: transparent;
+}
+.item img{
+    position: relative;
+}
+.item .contant{
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-40%, -40%);
+    font-size: 25px;
+}
+.video-fluid{
+    width: 100%;
+}
+.content{
+    padding: 40px 70px;
+}
+.content p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.heading a{
+    color: white;
+    background-color: #0d6efd;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.form{
+    background-color: #480ca8;
+    padding: 10px;
+    border-radius: 4px;
+}
+.form a{
+    color: white;
+    font-size: 18px;
+}
+.heading{
+    margin-bottom: 75px;
+}
+.heading a:hover, .heading a:focus, .form a:hover, .form a:focus{
+    text-decoration: none;
+}
+.list{
+    margin: 40px 0px;
+    font-size: 16px;
+}
+.footer{
+    padding: 25px 40px;
+    background-color: #480ca8;
+}
+@media screen and (max-width: 768px) {
+   .header .navbar-nav{
+       text-align: center;
+       margin-right: -15px;
+   }
+   .content{
+        padding: 40px 35px;
+    }
+   .navbar{
+       margin: 0px 15px;
+   }
+   .navbar-header a img{
+        max-width: 200px;
+    }
+    .item .contant{
+        transform: translate(-35%, -40%);
+        font-size: 16px;
+    }
+    .item .contant h2{
+        font-size: 22px;
+    }
+    .banner .item img{
+        height: 200px;
+    }
+}
+.details{
+    margin: 30px 60px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 195px;
+    padding: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 3px #888888;
+}
+.box p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.color, .privacy h3,h4{
+    color: #480ca8;
+}
+.privacy{
+    padding: 15px 70px;
+}
+.privacy p{
+    font-size: 17px;
+}
+@media screen and (max-width: 768px){
+    .privacy{
+        padding: 15px 25px;
+    }
+    .privacy p{
+        font-size: 15px;
+    }
+}
+.register{
+    padding: 20px 40px;
+}
+.register .mb_10{
+    margin-bottom: 15px;
+}
+.register .fa{
+    color: #480ca8;
+}
+.register .panel-heading{
+    background-color: #480ca8;
+    color: white;
+    padding: 15px 20px;
+}
+.register .panel-heading a:hover, .register .panel-heading a:focus{
+    text-decoration: none;
+}
+.register .panel-heading a{
+    display: block;
+}
+.register .panel-body{
+    background-color: #f3f3f3;
+}
+.inner_box{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.panel-group .panel{
+    margin-bottom: 15px;
+}
+.collapsible label span{
+    color: red;
+} 
+
